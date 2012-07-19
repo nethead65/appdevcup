@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UCM-Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.0">
+  <Model UniqueID="1cc52379-8fba-47f4-b704-ae6dbe9a0b79" Name="New model" ID="1" Prefix="M" Author="" Company="" Release="" CreationDateValue="07/16/2012 15:34:51">
+    <Actors>
+      <Actor UniqueID="3201ea26-db12-4c18-babc-731f21e0a474" Name="Coordinator" ID="1" Prefix="A">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Goals />
+      </Actor>
+      <Actor UniqueID="556e2a5f-29ca-4fdf-9505-3eecde8e821b" Name="Attendee" ID="2" Prefix="A">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Goals />
+      </Actor>
+      <Actor UniqueID="0f29e747-8a58-4792-aa76-098fa5dc67ac" Name="Admin" ID="3" Prefix="A">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Goals />
+      </Actor>
+    </Actors>
+    <Packages />
+    <UseCases>
+      <UseCase UniqueID="3969f841-41de-4ac0-ab89-7efe5bd5b251" Name="Create event" ID="1" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="990af8b2-64d8-4341-a9cd-b22e56a291e0" Name="1" ID="1" Prefix="">
+            <Description>"Login"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="6fab3585-4d56-44ac-9dba-7426aae01e4d" Name="2" ID="2" Prefix="">
+            <Description>access events screen</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="98bded0d-55d9-4a76-b884-0d97e150f137" Name="3" ID="3" Prefix="">
+            <Description>press create event button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="fea5c2fb-247f-4572-aa64-5600b927986e" Name="4" ID="4" Prefix="">
+            <Description>system opens create event page</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="ea88012b-6f51-4f78-851a-7f53c322c67d" Name="5" ID="5" Prefix="">
+            <Description>input event name</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="c3a96db6-c64e-4f70-92c1-a14355fa7dc2" Name="6" ID="6" Prefix="">
+            <Description>press ok</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="ecf6880f-72ca-4de9-b394-83fb88c4b1f3" Name="7" ID="7" Prefix="">
+            <Description>event is saved in roar; "Update Roar"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="871c066c-4f4e-4d36-8b5a-aa71974789e1" Name="7.A" ID="7" Prefix="A">
+            <Description>event already exists</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="847ae94c-c696-47f7-a38b-cea004240350" Name="7.A.1" ID="7" Prefix="A">
+            <Description>display "event already exists"</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>3201ea26-db12-4c18-babc-731f21e0a474</ActorUniqueID>
+            <IsPrimary>false</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>"registercoordinator"</Preconditions>
+        <Postconditions>Event is created and stored in roar</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="1dd32313-50e1-4193-9f0e-ceb205301fd9" Name="Modify event" ID="2" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="f2420079-ea8b-4795-b75a-5c55f41ccace" Name="1" ID="1" Prefix="">
+            <Description>"Login"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="d0c6c315-4cfd-49a4-8158-f6bd2254358b" Name="2" ID="2" Prefix="">
+            <Description>Press events button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="138227f9-541e-48f4-ad4e-a648ad7120ce" Name="3" ID="3" Prefix="">
+            <Description>"List events"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="99da4b19-f836-43e9-8a91-e77087c6f936" Name="4" ID="4" Prefix="">
+            <Description>Press event from events list</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="b8e22231-577c-44ec-9d24-82ce970db3ae" Name="4.A" ID="4" Prefix="A">
+            <Description>"search events"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="774c634a-2ecf-43ad-ab4a-e081a5930214" Name="4.A.1" ID="4" Prefix="A">
+            <Description>"List events"</Description>
+            <ChildID>1</ChildID>
+            <Type>AlternativeChild</Type>
+          </Step>
+          <Step UniqueID="b2cb82b7-a9fe-4f62-ad95-8c4d1e540e47" Name="5" ID="5" Prefix="">
+            <Description>Press event button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="208de9b6-133c-42db-891e-e94ad7f93cba" Name="6" ID="6" Prefix="">
+            <Description>Display event detail screen</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="1ccaf110-0742-4bf2-9851-96f5c8a2e55c" Name="7" ID="7" Prefix="">
+            <Description>Press ok button
+</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="01f89eab-2a3e-4a15-8347-fa657b1781d1" Name="8" ID="8" Prefix="">
+            <Description>"Update Roar"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="9f3c0fe3-64c3-4f1f-9aa2-5da0d4be54ef" Name="9" ID="9" Prefix="">
+            <Description>Return to "List events" screen</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions>"Create event"</Preconditions>
+        <Postconditions>Event is created and stored in roar</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="d22e56df-c9b7-444c-8e21-01191f80bb41" Name="Delete event" ID="3" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="721ae43d-2a14-4879-80fc-ffebee36521e" Name="1" ID="1" Prefix="">
+            <Description>"Login"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="e7488ab8-f63f-4b57-9c60-0217fccfdd45" Name="2" ID="2" Prefix="">
+            <Description>Press events button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="aa26c52c-df12-4a17-a271-6d7ff1f40f3c" Name="3" ID="3" Prefix="">
+            <Description>"List events"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="38c00257-8e08-4a02-9ee8-48ee8d8677b6" Name="4" ID="4" Prefix="">
+            <Description>Press delete button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="35d018c7-8336-4e93-a900-87a78d2095a3" Name="5" ID="5" Prefix="">
+            <Description>"Update Roar"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>3201ea26-db12-4c18-babc-731f21e0a474</ActorUniqueID>
+            <IsPrimary>false</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>"Create event"</Preconditions>
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="78549554-bbb3-4b70-826c-cdc9d090a1df" Name="Create prize" ID="4" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="79cc0752-fac9-4e77-9777-f5004cb5d7fc" Name="1" ID="1" Prefix="">
+            <Description>"Login"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="e55dbced-430a-4d3e-8ce5-0c6e730bcd70" Name="2" ID="2" Prefix="">
+            <Description>"Create event" or "Modify event"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="7d5c82f4-4e29-4761-ad74-26b69739d008" Name="3" ID="3" Prefix="">
+            <Description>Press prizes button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="45dfbb38-b35d-425d-aa3a-042001faa739" Name="4" ID="4" Prefix="">
+            <Description>"List prizes"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="13d60cde-6c91-4a28-b3ae-ef4521b96a98" Name="5" ID="5" Prefix="">
+            <Description>Enter prize name and points</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="72b9dca5-82fc-4ee7-bc89-e6d3888b9ee0" Name="5.A" ID="5" Prefix="A">
+            <Description>"Search prizes"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Alternative</Type>
+          </Step>
+          <Step UniqueID="b37f3665-f1d6-45e1-830b-fbf74d410bc6" Name="6" ID="6" Prefix="">
+            <Description>Press ok</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="4862c1a1-beea-4adf-b763-6215286e7b45" Name="7" ID="7" Prefix="">
+            <Description>"Update Roar"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="40d8566a-a4e5-480c-8ad8-785abe0847e2" Name="8" ID="8" Prefix="">
+            <Description />
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>3201ea26-db12-4c18-babc-731f21e0a474</ActorUniqueID>
+            <IsPrimary>false</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions>event is created "Create event"</Preconditions>
+        <Postconditions>prize is created</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="e5437c8a-ce43-45f4-a316-18c5bf21de5f" Name="Modify prize" ID="5" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="331b6dbc-9034-4314-8cec-973eaae86211" Name="Delete prize" ID="6" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="ebe2f62a-dcef-47b0-9a80-b5e30a65bd5f" Name="Assign prize to winner" ID="7" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="63275155-a59a-4342-a1ee-ba8c0249ae5f" Name="Remove assignment of prize to winner" ID="8" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="88e1ccaf-bdd0-436f-aa13-0fb338ca935e" Name="Search for attendee" ID="9" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="2339e442-5622-481d-a04b-c36be2071de7" Name="Check in event" ID="10" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="88f9319a-b136-4533-afa7-c4c8e1d4da9c" Name="View leader board" ID="11" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="04b37f71-ca63-4716-8a03-acd95304cb5d" Name="View profile" ID="12" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="bb4bc88a-69d7-42e9-adf2-a1822f2bb641" Name="Change user name in profile" ID="13" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="eb994fa1-7329-4dfb-bcd4-a6228536fdf9" Name="Create attendee" ID="14" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="d1cf8e75-7cf3-4b79-b4d1-c0f030feb250" Name="Modify attendee" ID="15" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="6854e028-4293-4c79-8a01-a465c2041a2e" Name="Delete attendee" ID="16" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="4a972ed1-c15a-4af7-b6de-b48bee1bf3b0" Name="Create coordinator" ID="17" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="46b5455f-e83c-4a75-9cc2-5c39aecdcbf1" Name="Modify coordinator" ID="18" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="47d9bf45-2138-4bea-a563-fa3d83a3cee4" Name="Delete coordinator" ID="19" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="8607a453-5d48-47e8-bd4e-94905e30d413" Name="Login" ID="20" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="18f56f07-5ebf-4cb3-b915-527f79e409f8" Name="Update Roar" ID="21" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="26709b99-6151-4aa2-9f35-4e1fc284b300" Name="List prizes" ID="22" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="14223b8a-daa1-4b84-955b-8f9e34101f6d" Name="Search prizes" ID="23" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="30ab0357-1ceb-4811-92f3-f907349dae2c" Name="Search events" ID="24" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="b5dcb782-f74d-4bd4-80be-d2396fa08b61" Name="List events" ID="26" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps />
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions />
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="b9db16c7-5023-414e-a848-8d68bbc1310c" Name="RegisterCoordinator" ID="27" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="4b02b414-289a-49f3-90d4-dee76e8e1c42" Name="1" ID="1" Prefix="">
+            <Description>Enter name, address, phone, user name, password</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="918ea829-3220-47ce-bcff-998c976206da" Name="2" ID="2" Prefix="">
+            <Description>Press ok button</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="a41ccb00-f93b-4b4e-8648-a264268bf517" Name="3" ID="3" Prefix="">
+            <Description>"Update Roar" with coordinator info, disable account</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="13a3f6bf-a678-45af-b9d1-479ffda996af" Name="4" ID="4" Prefix="">
+            <Description>System sends Email confirmation to coordinator</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="360c9643-4499-47b9-8376-1a86d9ff3cfa" Name="5" ID="5" Prefix="">
+            <Description>System sends email to admin</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="a83a5818-6c6d-4318-a30c-e16250551eaf" Name="6" ID="6" Prefix="">
+            <Description>Admin confirms the coordinator is legitimate</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="28473416-3335-4385-a2f4-ae1d10b55008" Name="7" ID="7" Prefix="">
+            <Description>Admin enables coordinator account</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="7b70a539-3fb5-4c39-8c1f-ad9d4ca8b80d" Name="8" ID="8" Prefix="">
+            <Description>System sends email to coordinator</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="d1c5188a-6857-4a0f-be06-b1fe4d711b82" Name="9" ID="9" Prefix="">
+            <Description>Coordinator "Login"</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors>
+          <ActiveActor>
+            <ActorUniqueID>3201ea26-db12-4c18-babc-731f21e0a474</ActorUniqueID>
+            <IsPrimary>false</IsPrimary>
+          </ActiveActor>
+          <ActiveActor>
+            <ActorUniqueID>0f29e747-8a58-4792-aa76-098fa5dc67ac</ActorUniqueID>
+            <IsPrimary>false</IsPrimary>
+          </ActiveActor>
+        </ActiveActors>
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions>Coordinator profile is created in Roar
+Account is enabled
+Is able to login
+can add events and assign prizes to attendees</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+      <UseCase UniqueID="712a1886-a75e-40a8-8c9b-c768c0988aac" Name="RegisterAttendee" ID="28" Prefix="UC">
+        <Attributes>
+          <Description />
+          <Notes />
+          <RelatedDocuments />
+        </Attributes>
+        <Steps>
+          <Step UniqueID="8f97dd87-46e2-4556-859d-baa442c9e573" Name="1" ID="1" Prefix="">
+            <Description>Enter name, address, phone, user name, password</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+          <Step UniqueID="6d948a39-e33b-45a4-9bd0-223ffe5fbac8" Name="2" ID="2" Prefix="">
+            <Description>"Update Roar" with coordinator info, disable account</Description>
+            <ChildID>-1</ChildID>
+            <Type>Default</Type>
+          </Step>
+        </Steps>
+        <OpenIssues />
+        <ActiveActors />
+        <HistoryItems />
+        <Prose />
+        <Preconditions />
+        <Postconditions>Attendee has an active profile in Roar, can login</Postconditions>
+        <Release />
+        <AssignedTo />
+        <Priority>1</Priority>
+        <Complexity>Low</Complexity>
+        <Implementation>Scheduled</Implementation>
+        <Level>Summary</Level>
+        <Status>Named</Status>
+        <Trigger>
+          <EventType>External</EventType>
+          <Description />
+        </Trigger>
+      </UseCase>
+    </UseCases>
+    <Requirements />
+    <Attributes>
+      <Description />
+      <Notes />
+      <RelatedDocuments />
+    </Attributes>
+    <Glossary />
+    <Stakeholders />
+  </Model>
+</UCM-Document>
